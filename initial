@@ -1,0 +1,21 @@
+weightKG = float(input("what do you weight in kg? (just the numbers)"))
+height_cm = float(input("what is your height in cm? (Just the numbers)"))
+age = int(input("how old are you? (Just the numbers)"))
+activity = float(input("Would you consider youself sedentary(1.2), active (1.4) or very active(1.8)?(just the numbers)"))
+
+gender = int(input("Are you a female (1) or male (2)?(just the number)"))
+
+if gender == 1:
+    BMR = (weightKG*10)+(height_cm*6.25)-(5*age)-161
+elif Gender == 2:
+    BMR = (weightKG*10)+(height_cm*6.25)-(5*age)-5
+else:
+    print("invalid"+gender)
+
+proteinGoal = weightKG*2
+TDEE = BMR*activity
+what = int(input("Would you like to know your TDEE (1) or daily protein goal (2)?(just the number)"))
+if what == 1:
+    print(TDEE)
+elif what == 2:
+    print(proteinGoal)
